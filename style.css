@@ -9,20 +9,29 @@ html {
 
 :root{
     --background:#F0F0F2;
+    --headersectionbg: hsla(26, 5%, 21%, 0.25);
     --text:#181a1c;
     --primary:#99AABF;
-    --accent:#A62934;
+    --accent:#BC2A2D;
 }
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 110%;
+    font-family:'Lucida Sans';
+    font-size: 130%;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     color:var(--text);
     background-color:var(--background);
 }
 
+a:link, a:visited {
+    color:#718091;
+}
+
+a:hover {
+    color: var(--primary);
+}
 header {
     background-image: url("images/GettyImages-668832038-5909f9e83df78c9283ee74e4.jpg");
     height: 50vh;
@@ -31,32 +40,44 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
-
+    position: relative;
 }
+
+h1, h2, h3 {
+    font-family: 'Quattrocento', serif;
+}
+
 header section {
     padding: 1rem;
+    position: absolute;
+    width: 116.95rem;
+    bottom: 5em;
+    background-color: var(--headersectionbg);
 }
 
 header section h1 {
     color:var(--accent);
-    font-size: 2.2em;
+    font-size: 3.2em;
 }
 
 header section p {
     color:var(--text);
-    font-size: 1.2em;
+    font-size: 2.2em;
 }
 
 .centered-main {
-    width: 70%;
+    width: 60%;
     max-width: 100em;
     margin: 0 auto;
 }
 
+h2{
+    padding-top: 2em;
+}
 .box-right {
     box-sizing: content-box;
     float: right;
-    width: 300px;
+    width: 325px;
     padding: 1em;
     border: 2px solid var(--text);
     margin: 0 0 0 1em;
@@ -70,5 +91,5 @@ header section p {
 }
 
 .footer {
-    padding: 0, 0.5em;
+    padding:0.5em;
 }
